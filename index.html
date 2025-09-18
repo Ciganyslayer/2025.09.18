@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza rendelés form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 style="text-align: center;">Kovács Pizza</h1>
-    <form>
+    <!-- from -->
+    <form method="post" action="https://httpsbin.org/post">
         <label>
             Name:
         <input type="text" name="name" placeholder="Pl. Lakatos Rozina" maxlength="20" required>    
@@ -29,22 +31,22 @@
     <legend>
         Pizza mérete:
         <label>
-        <input type="radio" name="size" required> Kicsi(22cm)
+        <input type="radio" name="size" required value="Kicsi(22cm)">Kicsi(22cm)
         </label>
         <label>
-        <input type="radio" name="size" required> Normál(32cm)
+        <input type="radio" name="size" required value="Normál(32cm)">Normál(32cm)
         </label>
         <label>
-        <input type="radio" name="size" required> Családi(50cm)
+        <input type="radio" name="size" required value="Családi(50cm)">Családi(50cm)
         </label>
     </legend>
     <fieldset>
         <legend>Feltétek:</legend>
         <label>
-        <input type="checkbox" name="feltét" required> Rántott csülök
-        <input type="checkbox" name="feltét" required> Pirított cápauszony
-        <input type="checkbox" name="feltét" required> Párolt marhahere
-        <input type="checkbox" name="feltét" required> Sült lópata
+        <input type="checkbox" name="feltét" required value="Rántott csülök">Rántott csülök
+        <input type="checkbox" name="feltét" required value="Pirított cápauszony">Pirított cápauszony
+        <input type="checkbox" name="feltét" required value="Párolt marhahere">Párolt marhahere
+        <input type="checkbox" name="feltét" required value="Sült lópata">Sült lópata
         </label>
     </fieldset>
     <fieldset>
