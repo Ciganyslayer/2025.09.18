@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza rendelés form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Kovács Pizza</h1>
+    <form>
+        <label>
+            Name:
+        <input type="text" name="name" placeholder="Pl. Lakatos Rozina" maxlength="20" required>    
+        </label>
+    </form>
+    <form>
+        <label>
+            Phone number:
+        <input type="tel" name="phone" placeholder="Pl. +36301234567" maxlength="15" required>    
+        </label>
+    </form>
+    <form>
+        <label>
+            E-mail:
+        <input type="email" name="email" placeholder="Pl. magyarpeter26@gmail.com" maxlength="50" required>    
+        </label>
+    </form>
+    <br>
+    <legend>
+        Pizza mérete:
+        <label>
+        <input type="radio" name="size" required> Kicsi(22cm)
+        </label>
+        <label>
+        <input type="radio" name="size" required> Normál(32cm)
+        </label>
+        <label>
+        <input type="radio" name="size" required> Családi(50cm)
+        </label>
+    </legend>
+</body>
+</html>
